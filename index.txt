@@ -1,0 +1,52 @@
+# Javascript
+
+1. console.table([]);   // logs in table format
+
+# DataTypes
+
+    # primitive types
+
+1. number
+2. bigint
+3. string
+4. boolean
+5. null
+6. undefined
+7. symbol
+
+console.log(typeof undefined) =>  undefined;
+console.log(typeof null) => object;
+
+
+# Conversasion coverting in Number
+
+1. "33" = 33
+2. "33abc" = NaN
+3. null = 0
+4. undefined = NaN
+5. true = 1
+6. false = 0
+7. "hello" = NaN
+
+
+# Rederences Non-primitive
+
+1. array
+2. object
+3. function
+
+# Memory-related
+     there are two types of memory allocations
+
+1. Stack (primitive DataTypes)
+2. Heap  (Nonprimitive DataTypes)
+
+# String Methods List
+
+
+
+
+
+
+
+

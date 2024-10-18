@@ -1,0 +1,24 @@
+Cursor ai optimization
+
+positive
+
+- very user-friendly.
+- real time code editor like a VS code
+- integrated Ai helper.
+- Only use for code base support
+- code suggestion very effective.
+- Supported many languages like hindi, gujarati 
+- edit code at a time with the bot
+- live code edit, update some key names, or change the variable name.
+- this ai editor is support mlutiplaform.
+- auto code generator.
+- editor was same like vs code.
+- live code optimization.
+- analyze code and give the best help.
+- automatic query generation.
+- auto-suggestion was very fast.
+
+
+nagetive
+
+- non coding support is not good like other real life activities.
