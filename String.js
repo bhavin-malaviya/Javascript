@@ -9,12 +9,14 @@ console.log(lengthWord);
 const indexOfWord = gameName.indexOf('a')
 console.log(indexOfWord);
 
-// charAt
+const charAtWord = gameName.charAt(4);
+console.log(charAtWord);
+
 // replace
 // repeat
 // search
 // split
-// slice
+// slice  
 // substring
 // sup
 // toLowerCase

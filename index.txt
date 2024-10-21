@@ -41,7 +41,11 @@ console.log(typeof null) => object;
 1. Stack (primitive DataTypes)
 2. Heap  (Nonprimitive DataTypes)
 
-# String Methods List
+
+# Arrays
+
+1. 
+
 
 
 
