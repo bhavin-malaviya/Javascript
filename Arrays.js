@@ -38,6 +38,41 @@ myArray.splice(1, 3);
 console.log("myArray", myArray);    /* In Splice first argument is start index and second argument is count of total index. and it's change to original array */
 
 
+A_name = ["bhavin", "samir", "ketan"]
+B_name = ["Ajay", "dahval", "dharmik"]
+
+// A_name.push(B_name);              /* Add other array */
+// console.log("A_name", A_name);
+
+// A_name.concat(B_name);               /* Add other array */
+// console.log("A_name", A_name);
+
+const allNames = A_name.concat(B_name);  /* Return new single array */
+console.log("allNames", allNames);
+
+const allNewNames = [...A_name, ...B_name]   /* this sprade is all array merge and return sigle array */
+console.log("allNewNames", allNewNames);
+
+countArray = [1, 2, 3, [4, 5, 6], 7, [6, 7 , [8, 9]]]  
+const allCountArray = countArray.flat(Infinity);     /* flate is given a all aray convert into sigle array */
+console.log("allCountArray", allCountArray);
+
+console.log(Array.isArray("bhavin"));
+console.log(Array.from("bhavin"));
+
+let Score1 = 100
+let Score2 = 200
+let Score3 = 300
+let Score4 = 400
+
+console.log(Array.of(Score1, Score2, Score3, Score4))
+
+
+
+
+
+
+
 
 
 
