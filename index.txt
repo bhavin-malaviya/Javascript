@@ -44,7 +44,16 @@ console.log(typeof null) => object;
 
 # Arrays
 
-1. 
+1. 5 am
+    day 1 = 11 am
+    lunch = 12 am
+    boating = 5 pm
+    dinner = 8 pm
+    walking = 10 pm
+    sleeping = 2 am
+    day 2 breakfast = 9 am
+    
+
 
 
 
