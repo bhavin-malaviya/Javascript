@@ -7,7 +7,7 @@ const mySym = Symbol('key1'); /* decalre symbol */
 
 const user = {
     name: "bhavin",
-    "fullname": "bhavin malaviya",
+    "full name": "bhavin malaviya",
     [mySym]: "key2",                            /* decalre symbol in object this way*/
     age: 30,
     email: "bhavin@gmail.com",
@@ -16,8 +16,8 @@ const user = {
 }
 
 console.log(user.email);
-console.log(user["fullname"]);          /* access symbol to the object key in this way*/
-console.log(user[mySym]);
+console.log(user["full name"]);             /* access the object if key is string way */
+console.log(user[mySym]);                   /* access symbol to the object key in this way*/
 console.log(mySym);
 
 // Object.freeze(user);                     /* after freeze no changes in the above object */
@@ -50,7 +50,7 @@ console.log(registerUser.fullname.userFullName.firstName);
 const obj1 = {a: 1, b:2,};
 const obj2 = {c: 3, d:4,};
 
-const obj3 = Object.assign({}, obj1, obj2);
+const obj3 = Object.assign({}, obj1, obj2);       /* {} This empty object is used for a target object and other all are source objects
 console.log(obj3);
 
 const obj4 = {...obj1, ...obj2}
