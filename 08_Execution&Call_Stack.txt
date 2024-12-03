@@ -1,0 +1,48 @@
+                     ---------------------JavaScript Execution Context---------------------------------
+
+    In start of execution of JavaScript first global execution context are defined in this keyword.
+
+1. Global Execution Context
+2. Function Execution Context
+3. Eval Execution Context
+
+
+* Global Execution Context in two phase
+
+1. Memory Creation Phase
+2. Execution Phase
+
+
+
+ ** Code Example
+
+    let val1 = 10
+    let val2 = 5
+
+    Function addnum(num1, num2){
+        let total = val1 + val2
+        return total
+    }
+
+    let result1 = addnum(val1, val2);
+    let result2 = addnum(10, 2);
+
+ In Above Code Execution This way
+
+
+ 1. Global Execution
+
+    this
+
+ 2. Memory Creation Phase                       3. Execution Phase
+
+    val1 = undefined                              val1 = 10   
+    val2 = undefined                              val2 = 5                              
+    addnum = defination                           addnum = ------> in function execution crete new variable environment and execution context
+    result1 = undefined                           result1 = 15                                1. Memory Creation Phase       2. Execution Phase          
+    result2 = undefined                           addnum = ----> same process as Above            val1 = undefined             num1 = 10             
+                                                  result2 = 12                                    val2 = undefined             num2 = 5      
+                                                                                                  total = undefined            total = 15      
+                                                                                                                |
+                                                                                                                |------> After function execution Memory Creation
+                                                                                                                         phase is deleted
