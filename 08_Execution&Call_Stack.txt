@@ -46,3 +46,9 @@
                                                                                                                 |
                                                                                                                 |------> After function execution Memory Creation
                                                                                                                          phase is deleted
+
+
+-------------------------------- Call Stack-------------------------------------------------
+
+
+in Call Stack is use for a LIFO method - last in first out
