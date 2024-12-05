@@ -59,7 +59,7 @@ while (index <= 10) {
 }
 
 
-myNewArray = ["jk", "kl", "bm"]
+let myNewArray = ["jk", "kl", "bm"]
 let arr = 0;
 
 while (arr < myNewArray.length){
@@ -76,7 +76,35 @@ while (arr < myNewArray.length){
 let score = 1
 
 do {
-    console.log(`value of score is ${score}`);
+    // console.log(`value of score is ${score}`);
     score++;
     
 } while (score <= 10);
+
+
+// let rows = 5; // Number of rows in the pyramid
+
+// for (let i = 1; i <= rows; i++) {
+//     let spaces = ' '.repeat(rows - i); // Create leading spaces
+//     let stars = '*'.repeat(2 * i - 1); // Create the stars
+//     console.log(spaces + stars); // Combine spaces and stars
+// }
+
+
+let rows = 5; // Number of rows in the pyramid
+
+for (let i = 1; i <= rows; i++) {
+    let line = ''; // Initialize an empty line for each row
+
+    // Add spaces to the line
+    for (let j = 1; j <= rows - i; j++) {
+        line += ' ';
+    }
+
+    // Add stars to the line
+    for (let k = 1; k <= 2 * i - 1; k++) {
+        line += '*';
+    }
+
+    console.log(line); // Print the line
+}
