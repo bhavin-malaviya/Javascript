@@ -79,7 +79,7 @@ for (let i = 1; i <= lans; i++) {
   let line = ""; // Initialize an empty line for each row
 
   // Add stars to the line
-  for (let k = 1; k <= i; k++) {
+  for (let k = 1; k <= i; k++) {s
     line += "*";
   }
 
@@ -117,7 +117,7 @@ for (let i = 1; i <= lans - 1; i++) {
 
 let rows = 10; // Number of rows in the pyramid
 
-for (let i = 1; i < rows; i++) {
+for (let i = 1; i <= rows; i++) {
   let line = ""; // Initialize an empty line for each row
 
   // Add stars to the line
