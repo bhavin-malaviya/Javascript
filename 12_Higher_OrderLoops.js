@@ -85,12 +85,7 @@ myCoder.forEach((item) => {
 
 const myNums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
-
-
-
-
 //  ---------------------------- filter --------------------------------
-
 
 // let newNums =  myNums.filter( (num) => num > 4)
 let newNums = myNums.filter((num) => {
@@ -109,39 +104,36 @@ myNums.forEach((num) => {
 // console.log(otherNums);
 
 const books = [
-    { name: "Book One", genre: "History", publish: 1987, edition: 2010 },
-    { name: "Book Two", genre: "Science Fiction", publish: 1995, edition: 2003 },
-    { name: "Book Three", genre: "Fantasy", publish: 2001, edition: 2015 },
-    { name: "Book Four", genre: "Biography", publish: 1980, edition: 1990 },
-    { name: "Book Five", genre: "Mystery", publish: 2012, edition: 2018 },
-    { name: "Book Six", genre: "History", publish: 2005, edition: 2011 },
-    { name: "Book Seven", genre: "Self-Help", publish: 1999, edition: 2007 },
-    { name: "Book Eight", genre: "Philosophy", publish: 1978, edition: 1985 },
-    { name: "Book Nine", genre: "Mystery", publish: 2010, edition: 2020 },
-    { name: "Book Ten", genre: "Philosophy", publish: 1965, edition: 1980 }
+  { name: "Book One", genre: "History", publish: 1987, edition: 2010 },
+  { name: "Book Two", genre: "Science Fiction", publish: 1995, edition: 2003 },
+  { name: "Book Three", genre: "Fantasy", publish: 2001, edition: 2015 },
+  { name: "Book Four", genre: "Biography", publish: 1980, edition: 1990 },
+  { name: "Book Five", genre: "Mystery", publish: 2012, edition: 2018 },
+  { name: "Book Six", genre: "History", publish: 2005, edition: 2011 },
+  { name: "Book Seven", genre: "Self-Help", publish: 1999, edition: 2007 },
+  { name: "Book Eight", genre: "Philosophy", publish: 1978, edition: 1985 },
+  { name: "Book Nine", genre: "Mystery", publish: 2010, edition: 2020 },
+  { name: "Book Ten", genre: "Philosophy", publish: 1965, edition: 1980 },
 ];
 
 // const userBooks = books.filter( (bk) => bk.genre === "History")
-const userBooks1 = books.filter( (bk) => bk.publish >= 2000 && bk.genre ==="History");
-console.log(userBooks1);
+const userBooks1 = books.filter((bk) => {
+  return bk.publish >= 2000 && bk.genre === "History";
+});
+// console.log(userBooks1);
 
+const myNumbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
-
-const myNumbers = [1,2,3,4,5,6,7,8,9,10];
-
-const newNumber = myNumbers.map( (num) => num + 10);
-console.log(newNumber);
-
+const newNumber = myNumbers.map((num) => num + 10);
+// console.log(newNumber);
 
 const newCount = myNumbers
-                    .map( (num) => num * 10)
-                    .map( (num) => num + 1)
-                    .filter ( (num) => num >= 40)
+  .map((num) => num * 10)
+  .map((num) => num + 1)
+  .filter((num) => num >= 40);
 
-                    console.log(newCount);
+// console.log(newCount);
 
-
-                
 
 
 
@@ -151,4 +143,23 @@ const newCount = myNumbers
 //  ---------------------------------- Reduce ------------------------------------
 
 
-                    
+
+
+const Numbers = [1, 2, 3, 4];
+
+// const myTotals = Numbers.reduce( (acc, value) => {
+//     return acc + value;
+// }, 0);
+
+const myTotals = Numbers.reduce((acc, value) => acc + value, 0);
+console.log(myTotals);
+
+const shoppingCart = [
+  { itemName: "TV", price: 30000 },
+  { itemName: "Refrigerator", price: 25000 },
+  { itemName: "Washing Machine", price: 18000 },
+  { itemName: "Microwave Oven", price: 12000 },
+];
+
+const totalPayment = shoppingCart.reduce((acc, value) => (acc + value.price),0);
+console.log(totalPayment);

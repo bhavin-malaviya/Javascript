@@ -52,14 +52,3 @@ console.log(typeof null) => object;
     walking = 10 pm
     sleeping = 2 am
     day 2 breakfast = 9 am
-    
-
-
-
-
-
-
-
-
-
-
