@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DoM Learning</title>
+</head>
+<style>
+    .bgcolor {
+        background-color: black;
+        color: white;
+    }
+    .pcolor {
+        color:coral;
+    }
+    .headingColor{
+        color:white;
+        font-size: large
+    }
+    .spanColor {
+        color: red;
+    }
+</style>
+<body class="bgcolor">
+    <h1 id="title"> Dom Learning </h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum, dicta.</p>
+    
+</body>
+</html>
+
+
+<p class="headingColor"> note :-  </p>
+
+<p class="pcolor"> document.getElementById("title").id </p>
+<p class="pcolor"> document.getElementById("title").className </p>
+<p class="pcolor"> document.getElementById("title").getAttribute </p>
+<p class="pcolor"> document.getElementById("title").getAttribute('id') </p>
+<p class="pcolor"> document.getElementById("title").getAttribute('class') </p>
+<p class="pcolor"> document.getElementById("title").setAttribute('class', 'test') </p>
+
+<p class="headingColor"> Store in Variable:- </p> 
+<p class="pcolor"> const title = document.getElementById('title')</p>
+<p class="pcolor"> title.innerText <span class="spanColor">  :- use  for showing display </span></p>
+<p class="pcolor"> title.innerContent <span class="spanColor"> :- use all text content which not showing in display </span> </p>
+<p class="pcolor"> title.innerHTML <span class="spanColor"> :- In innerHtml give a whole tag </span></p>
+
+<p class="headingColor"> querySelector :- </p>
+<p class="pcolor"> document.querySelector('h1') </p>
+<p class="pcolor"> document.querySelector('#title') </p>
+<p class="pcolor"> document.querySelector('.heading') </p>
