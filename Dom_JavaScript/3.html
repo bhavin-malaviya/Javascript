@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> DOM : 3 </title>
+</head>
+<style>
+    .bodyColor {
+        background-color: black;
+        color: bisque;
+    }
+</style>
+<body class="bodyColor">
+    <h1 style="text-align: center;">Document Object Model 3</h1>
+</body>
+<script>
+    const div = document.createElement("div");
+    console.log(div);
+    
+    div.className = "main";
+    div.id = Math.round(Math.random() * 10 + 1);
+    div.setAttribute("title", "Document Object Model");
+    div.style.color = "red";
+    const p = document.createElement("p");
+    p.textContent = "This one is a document object model add this text using DOM Mehtod"
+    p.style.color = "brown";
+    div.appendChild(p);    
+    
+    document.body.appendChild(div);
+</script>
+</html>
