@@ -1,45 +1,3 @@
-<!-- <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Calculater </title>
-</head>
-<style>
-     .container {
-    width: 100%;
-    max-width: 500px;
-    margin: 50px auto;
-    padding: 20px;
-    background-color: #f9f9f9;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    font-family: Arial, sans-serif;
-  }
-  #result {
-
-  }
-</style>
-<body> 
-    <div class="container">
-        <h3 style="text-align: center;"> BMI Calculater </h3>
-        <form>
-            <p><label>Height in CM :- </label><input type="text" id="height" /></p>
-            <p><label>Weight in KG :- </label><input type="text" id="weight" /></p>
-            <button style="background-color: burlywood; margin-left: 41%;"> Calculate </button>
-            <div id="result"> HELLO </div>  
-            <div id="weight-guide">
-                <h3> BMI Weight Gide </h3>
-                <p style="font-size:smaller;"><b> Under Weight = Less than 18.6 </b></p>
-                <p style="font-size:smaller;"><b> Normal Range = 18.6 and 24.9 </b></p>
-                <p style="font-size:smaller;"><b> Overweight = Greter than 24.9 </b></p>
-            </div>
-        </form>
-    </div>
-</body>
-</html> -->
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -135,21 +93,21 @@
 <body>
   <div class="container">
     <h1>BMI Calculator</h1>
-    <form>
+    <form id="bmi-form">
       <div class="form-group">
         <label for="height">Height in CM:</label>
-        <input type="text" id="height" name="height">
+        <input type="text" id="height" name="height" required>
       </div>
       <div class="form-group">
         <label for="weight">Weight in KG:</label>
-        <input type="text" id="weight" name="weight">
+        <input type="text" id="weight" name="weight" required>
       </div>
       <div class="form-group">
-        <button> Calculate </button>
+        <button type="submit"> Calculate </button>
       </div>
     </form>
     <div class="info-section">
-      <div id="results"></div>
+      <div id="results" class="result-text">Enter your details</div>
       <div class="bmi-guide">
         <strong>BMI Weight Guide</strong><br><br>
         Under Weight = Less than 18.6<br>
@@ -159,4 +117,5 @@
     </div>
   </div>
 </body>
+<script src="project2.js"></script>
 </html>
