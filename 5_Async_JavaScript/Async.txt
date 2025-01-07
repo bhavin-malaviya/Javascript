@@ -1,0 +1,15 @@
+# --- JavaScript  
+
+
+1. Syncronous
+2. Single threaded
+
+
+# --- Execution Context
+
+    - execute one line code at a time.
+    - each execution waits for the last line to complete before executing.
+
+
+
+##  Blocking Code VS Non-blocking Code :::-
