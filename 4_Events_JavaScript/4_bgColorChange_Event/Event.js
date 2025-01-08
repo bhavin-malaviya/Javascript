@@ -1,5 +1,7 @@
 let start = document.querySelector("#start");
 let stop = document.querySelector("#stop");
+let colorInterval;
+let stopInterval;
 
 function generateUniqueColor() {
     // Generate a random number between 0 and 0xFFFFFF, then convert it to a hex string
@@ -9,10 +11,18 @@ function generateUniqueColor() {
     return `#${randomColor.padStart(6, '0')}`;
   }
 const changeColor = () => {
-    generateUniqueColor()
+    document.body.style.backgroundColor = generateUniqueColor();
 }
 
 start.addEventListener("click", () => {
-    document.body.style.backgroundColor = setInterval(changeColor, 1000);
+    if(!colorInterval){
+        stopInterval = setInterval(changeColor, 1000);
+    }
+});
+
+stop.addEventListener("click", () => {
+    clearInterval(stopInterval);
+    colorInterval = null;
+    console.log("Stop Color Change");
 });
 
