@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    img {
+        width: 100px;
+        height: 100px;
+    };
+    ::content {
+        color: blue;
+    }
+</style>
+<body style="background-color: grey; color: antiquewhite;">
+    <h1 style="color: brown;"> XML Request RedyState </h1>
+<P> 0	UNSENT	Client has been created. open() not called yet. </P>
+<p> 1	OPENED	open() has been called.</p>
+<p> 2	HEADERS_RECEIVED	send() has been called, and headers and status are available.</p>
+<p> 3	LOADING	Downloading; responseText holds partial data.</p>
+<p> 4	DONE	The operation is complete.</p>
+
+<div class="project">
+    <div id="img">
+        <p id="content"></p>
+    </div>
+</div>
+
+
+</body>
+
+<script>
+    const url = 'https://api.github.com/users/hiteshchoudhary';
+    const xhr = new XMLHttpRequest();
+    const image = document.getElementById('img');
+    const p = document.getElementById('content');
+
+    xhr.open("GET", url);
+
+    xhr.onreadystatechange = () => {
+        console.log(`ReadyState: ${xhr.readyState}`);
+
+        if (xhr.readyState === 4) {
+            if (xhr.status === 200) {
+                try {
+                    const data = JSON.parse(xhr.responseText);
+                    // console.log(xhr.responseText);
+                    console.log(typeof data);
+                    console.log(`Followers: ${data.followers}`);
+                    console.log(`Avtar URL: ${data.avatar_url}`);
+                    let imgElememt = document.createElement('img');
+                    imgElememt.src = data.avatar_url;
+                    image.appendChild(imgElememt);
+                    p.innerHTML = ` Followers:- ${data.followers}`; 
+
+                } catch (error) {
+                    console.error("Error parsing JSON response:", error);
+                }
+            } else {
+                console.error(`Request failed with status: ${xhr.status}`);
+            }
+        }
+    };
+
+    xhr.send();
+</script>
+</html>
